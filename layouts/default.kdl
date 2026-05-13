@@ -59,7 +59,7 @@ layout {
                 tab_active_sync         "#[bg=$bg,fg=$yellow]#[bg=$yellow,fg=$bg,bold]{index} #[bg=$bg,fg=$yellow,bold] {name}{sync_indicator}#[bg=$bg,fg=$bg,bold]"
 
                 // separator between the tabs
-                tab_separator           "#[fg=cyan,bold] ⋮ "
+                tab_separator           "#[bg=$bg] "
 
                 // indicators
                 tab_sync_indicator       " "
