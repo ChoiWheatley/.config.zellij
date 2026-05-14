@@ -1,23 +1,41 @@
 simplified_ui false
 pane_frames true
 
+themes {
+    zellij-light {
+        fg 46 52 64
+        bg 236 239 244
+        red 176 74 86
+        green 45 92 82
+        yellow 154 107 21
+        blue 76 120 168
+        magenta 143 95 137
+        orange 184 101 59
+        cyan 79 140 157
+        black 216 222 233
+        white 255 255 255
+    }
+}
+
+theme "zellij-light"
+
 layout {
     default_tab_template {
         children
         pane size=1 borderless=true {
             plugin location="file:~/.config/zellij/plugins/zjstatus.wasm" {
-                // Nord theme                          
-                color_fg "#616e88" //= Brightest + 10% - "#4C566A" = Brightest - "#434C5E" = Bright
-                color_bg "#2E3440"
-                color_black "#3B4252"
-                color_red "#BF616A"
-                color_green "#A3BE8C"
-                color_yellow "#EBCB8B"
-                color_blue "#81A1C1"
-                color_magenta "#B48EAD"
-                color_cyan "#88C0D0"
-                color_white "#E5E9F0"
-                color_orange "#D08770"
+                // Nord-inspired light theme with stronger light-background contrast
+                color_fg "#2E3440"
+                color_bg "#ECEFF4"
+                color_black "#D8DEE9"
+                color_red "#B04A56"
+                color_green "#4F7D4F"
+                color_yellow "#9A6B15"
+                color_blue "#4C78A8"
+                color_magenta "#8F5F89"
+                color_cyan "#4F8C9D"
+                color_white "#FFFFFF"
+                color_orange "#B8653B"
                 
                 format_left   "{mode}#[bg=$bg] {tabs}"
                 format_center "#[bg=$bg,fg=$fg] Zellij: #[bg=$bg,fg=$fg]{session}"
@@ -28,7 +46,7 @@ layout {
 
                 border_enabled  "false"
                 border_char     "─"
-                border_format   "#[fg=#6C7086]{char}"
+                border_format   "#[fg=#D8DEE9]{char}"
                 border_position "top"
 
                 hide_frame_for_single_pane "false"

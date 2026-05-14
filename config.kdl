@@ -228,7 +228,7 @@ plugins {
 //   - true (default)
 //   - false
 //
-pane_frames false
+pane_frames true
 
 // Toggle between having Zellij lay out panes according to a predefined set of layouts whenever possible
 // Options:
@@ -364,10 +364,10 @@ default_layout "default"
 //
 // disable_session_metadata true
 
-load_plugins {
-    "file:./plugins/zjframes.wasm" {
-        hide_frame_for_single_pane       "false"
-        hide_frame_except_for_search     "true"
-        hide_frame_except_for_fullscreen "true"
-    }
-}
+// load_plugins {
+//     "file:./plugins/zjframes.wasm" {
+//         hide_frame_for_single_pane       "false"
+//         hide_frame_except_for_search     "true"
+//         hide_frame_except_for_fullscreen "true"
+//     }
+// }
